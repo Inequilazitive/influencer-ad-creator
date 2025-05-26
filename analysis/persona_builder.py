@@ -1,4 +1,4 @@
-from analysis.text_analysis import extract_keywords, get_text_embeddings
+from text_analysis import extract_keywords, get_text_embeddings
 
 def build_persona_from_text(tweets, recency_weight=0.75):
     contents = [t['content'] for t in tweets]
