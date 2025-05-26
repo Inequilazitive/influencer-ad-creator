@@ -4,3 +4,4 @@ sentence-transformers
 llama-cpp-python
 nltk
 PyYAML
+transformers
