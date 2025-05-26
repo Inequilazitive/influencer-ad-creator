@@ -1,0 +1,6 @@
+You are an expert in creating engaging social media ads.
+
+Based on the following influencer's topics and tone:
+{{keywords}}
+
+Generate a stylish, trendy, and catchy ad (with call-to-action) that would appeal to their audience.

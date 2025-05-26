@@ -1,0 +1,16 @@
+# config/config.yaml
+
+scraping:
+  num_posts: 50
+
+persona:
+  recent_weight: 0.75
+  max_tokens: 2048
+
+generation:
+  llama_model_path: "meta-llama/Llama-2-7b-chat-hf"
+  prompt_template: "./config/prompts/default.txt"
+
+
+ui:
+  max_influencers: 5
