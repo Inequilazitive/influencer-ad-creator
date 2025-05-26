@@ -31,4 +31,4 @@ with gr.Blocks() as demo:
     btn = gr.Button("Generate Ad")
     btn.click(fn=run_pipeline, inputs=inp, outputs=out)
 
-demo.launch()
+demo.launch(share=True)
