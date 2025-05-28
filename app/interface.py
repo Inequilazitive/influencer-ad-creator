@@ -1,6 +1,6 @@
 import gradio as gr
 from scraping.twitter_scraper import scrape_twitter
-from analysis.persona_builder import build_persona_from_text
+from analysis.persona_builder import build_persona_from_text, build_persona
 from generation.llama_wrapper import LlamaGenerator
 from generation.ad_generator import generate_ad
 import yaml
@@ -19,7 +19,7 @@ def run_pipeline(handles: str):
         tweets = scrape_twitter(user, config['scraping']['num_posts'])
         all_tweets.extend(tweets)
 
-    persona = build_persona_from_text(all_tweets, config['persona']['recent_weight'])
+    persona = build_persona(all_tweets)
     ad_text = generate_ad(persona, llama, config['generation']['prompt_template'])
 
     return ad_text

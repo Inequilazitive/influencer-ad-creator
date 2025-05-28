@@ -4,3 +4,10 @@ sentence-transformers
 nltk
 PyYAML
 transformers
+numpy
+scikit-learn
+pandas
+regex
+vaderSentiment
+emoji
+torch
